@@ -1,0 +1,21 @@
+name: turing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core stack
+  - python>=3.6
+  - numpy
+  - scipy
+  - matplotlib
+  - pytorch
+  - keras
+  - pandas
+  - scikit-learn
+  - requests
+  - pip
+  - pip:
+    - regional
+
+  # Testing
+  - pytest
