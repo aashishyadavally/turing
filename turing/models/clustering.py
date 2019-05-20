@@ -86,7 +86,6 @@ class KNearestNeighbours:
         self.distance_type = distance_type
         self.dataset = dict(zip(self.points, labels))
 
-
         for iteration in range(max_iter):
             previous_labels = labels
 
@@ -98,7 +97,6 @@ class KNearestNeighbours:
                 print("Stopping criterion met, model training is being\
                       stopped.")
                 break
-
 
     def reassign_label(self, x):
         """
@@ -145,6 +143,7 @@ class KNearestNeighbours:
                 True, if dataset point label don't change, else False
         """
         return bool(previous_labels == self.labels)
+
 
 class KMeans:
     """
